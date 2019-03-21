@@ -1,0 +1,11 @@
+[Unit]
+Description=FRC2706 Camera Streamer
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/home/pi/Streamer/runStreamer
+WorkingDirectory=/home/pi/Streamer/
+
+[Install]
+WantedBy=multi-user.target
